@@ -13,11 +13,11 @@ const getData = async () => {
 function displayAllData(data) {
   displayProfessionalName(data.professionalName);
   displayImage(data.base64Image);
-  displayPrimaryDescription(data);
-  displayWorkDescription(data);
-  displayLinkTitleText(data);
-  displayLinkedInLink(data);
-  displayGitHubLink(data);
+  displayPrimaryDescription(data.primaryDescription);
+  displayWorkDescription(data.workDescription1);
+  displayLinkTitleText(data.linkTitleText);
+  displayLinkedInLink(data.linkedInLink);
+  displayGitHubLink(data.githubLink);
 }
 
 function displayProfessionalName(n) {
